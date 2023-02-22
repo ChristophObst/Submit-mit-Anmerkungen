@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
     `The age-badness-sum of ${data.firstName} is ${data.age + data.badness}`
   );
   //Problem: Addition von 2 Variablen so nicht möglich, da die Ausgelesenen Werte nur hintereinander geschrieben werden!
-  //Lösung: parseInt(wert, Basiszahl) zergliedert Werte und ermöglicht ein Verrechnen, Basiszahl sollte immer 10 sein:
+  //Lösung: parseInt(wert, Basiszahl) convertiert Strings(Textwerte) in Zahlen und ermöglicht ein Verrechnen, Basiszahl sollte immer 10 sein:
   console.log(
     `The age-badness-sum of ${data.firstName} is ${
       parseInt(data.age, 10) + parseInt(data.badness, 10)
